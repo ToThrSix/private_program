@@ -1,6 +1,6 @@
 # Practice to make a private program.
 import sys
-import PyQt5.QtWidgets import QApplication, QWidget
+from PyQt5.QtWidgets import QApplication, QWidget
 
 class testProgram(QWidget):
 
