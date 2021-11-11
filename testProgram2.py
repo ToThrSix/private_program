@@ -6,7 +6,7 @@ from PyQt5.QtGui import QIcon
 class testProgram2(QWidget)
 
     def __init__(self):
-
+    
         super().__init__()
 
         self.initUI()
@@ -26,4 +26,4 @@ if __name__ == "__main__":
 
     app = QApplication(sys.argv)
     ex = testProgram2()
-    sys.exit(app.exec_())
+sys.exit(app.exec_())
