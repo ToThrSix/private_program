@@ -17,6 +17,8 @@ class testProgram2(QWidget)
 
         # 어떤 아이콘을 사용할 것인지 설정
         self.setWindowIcon(QIcon("web.png"))
+
+        # setGeometry method는 move와 resize를 합쳐놓은 method이다.
         self.setGeometry(300, 300, 300, 200)
         self.show()
 
