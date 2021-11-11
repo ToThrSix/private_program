@@ -12,15 +12,17 @@ class testProgram3(QWidget):
         self.initUI()
 
     def initUI(self):
-
-        self.setWindowTitle("use Button to close the widget")
-        self.setGeometry(300, 300, 500, 400)
-        self.setWindowIcon(QIcon("web.png"))
         
         btn = QPushButton("Quit", self)
         btn.move(50, 50)
         btn.resize(btn.sizeHint())
         btn.clicked.connect(QCoreApplication.instance().quit)
+
+        
+        self.setWindowTitle("use Button to close the widget")
+        self.setGeometry(300, 300, 500, 400)
+        self.setWindowIcon(QIcon("web.png"))
+        self.show()
 
 if __name__ == "__main__":
 
