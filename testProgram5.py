@@ -23,7 +23,7 @@ class testProgram5(QMainWindow):
         btn.clicked.connect(QApplication.instance().quit)
 
         self.setWindowTitle("use ToolTip Bar")
-        self.setWindowIcon(QIcon("Web.png"))
+        self.setWindowIcon(QIcon("web.png"))
         self.setGeometry(300, 300, 400, 300)
         self.show()
 
