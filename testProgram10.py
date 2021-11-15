@@ -21,4 +21,11 @@ class testProgram10(QMainWindow):
                                 "border-width:2px;"
                                 "border-color:#FA8072;"
                                 "border-radius:3px;")
-        
+        lbl_green.setStyleSheet("color:green;"
+                                "background-color:#7FFFD4;")
+        lbl_blue.setStyleSheet("color:blue;"
+                                "background-color:#87CEFA;"
+                                "border-style:dashed;"
+                                "border-width:3px;"
+                                "border-color:#1E90FF;")
+                                
