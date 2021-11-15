@@ -28,4 +28,12 @@ class testProgram10(QMainWindow):
                                 "border-style:dashed;"
                                 "border-width:3px;"
                                 "border-color:#1E90FF;")
-                                
+
+        vbox = QVBoxLayout()
+        vbox.addWidget(lbl_red)
+        vbox.addWidget(lbl_green)
+        vbox.addWidget(lbl_blue)
+
+        self.setLayout(vbox)
+
+        
