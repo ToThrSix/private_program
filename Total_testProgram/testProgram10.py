@@ -1,7 +1,7 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, qApp, QAction, QLabel, QVBoxLayout
+from PyQt5.QtWidgets import QApplication, QWidget, qApp, QAction, QLabel, QVBoxLayout
 
-class testProgram10(QMainWindow):
+class testProgram10(QWidget):
 
     def __init__(self):
 

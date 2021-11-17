@@ -1,12 +1,12 @@
 # Box Layout
 
 import sys
-from PyQt5.QtWidgets import QApplication, qApp, QMainWindow, QPushButton, QHBoxLayout, QVBoxLayout
+from PyQt5.QtWidgets import QApplication, qApp, QWidget, QPushButton, QHBoxLayout, QVBoxLayout
 from PyQt5.QtGui import QIcon
 
 # QHBoxLayout과 QVBoxLayout은 box layout을 만들기 위한 클래스이다.
 
-class testProgram11(QMainWindow):
+class testProgram11(QWidget):
 
     def __init__(self):
 
@@ -15,24 +15,24 @@ class testProgram11(QMainWindow):
 
     def initUI(self):
 
-        okButton = QPuchButton("OK", self)
+        okButton = QPushButton("OK", self)
         cancelButton = QPushButton("CANCEL", self)
 
-        okButton.resize(okButton.sizeHine())
-        cancelButton.resize(calcelButton.sizeHine())
-
-        vBox = QVBoxLayout()
-        vBox.addStretch(5)
-        vBox.addWidget(okButton)
-        vBox.addWidget(cancelButton)
-        vBox.addStretch(1)
+        okButton.resize(okButton.sizeHint())
+        cancelButton.resize(cancelButton.sizeHint())
 
         hBox = QHBoxLayout()
         hBox.addStretch(5)
-        hBox.addLayout(vBox)
+        hBox.addWidget(okButton)
+        hBox.addWidget(cancelButton)
         hBox.addStretch(1)
 
-        self.setLayout(hBox)
+        vBox = QVBoxLayout()
+        vBox.addStretch(5)
+        vBox.addLayout(hBox)
+        vBox.addStretch(1)
+
+        self.setLayout(vBox)
 
         self.setWindowTitle("Box Layout")
         self.setGeometry(300, 300, 500, 400)
