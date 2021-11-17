@@ -17,7 +17,7 @@ class testProgram7(QMainWindow):
 
     def initUI(self):
 
-        exitAction = QAction(QIcon("exit.png"), "Exit", self)
+        exitAction = QAction(QIcon("../Image/exit.png"), "Exit", self)
 
         #대소문자의 영향을 받지는 않는다.
         exitAction.setShortcut("Ctrl+q")

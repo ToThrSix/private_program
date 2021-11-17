@@ -14,7 +14,7 @@ class testProgram8(QMainWindow):
 
     def initUI(self):
 
-        exitAction = QAction(QIcon("exit.png"), "Exit", self)
+        exitAction = QAction(QIcon("../Image/exit.png"), "Exit", self)
         exitAction.setShortcut("ctrl+q")
         exitAction.setStatusTip("Exit Application")
         exitAction.triggered.connect(qApp.quit)

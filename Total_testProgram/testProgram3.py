@@ -21,7 +21,7 @@ class testProgram3(QWidget):
         
         self.setWindowTitle("use Button to close the widget")
         self.setGeometry(300, 300, 500, 400)
-        self.setWindowIcon(QIcon("web.png"))
+        self.setWindowIcon(QIcon("../Image/web.png"))
         self.show()
 
 if __name__ == "__main__":

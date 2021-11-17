@@ -16,7 +16,7 @@ class testProgram6(QMainWindow):
     def initUI(self):
 
         # icon, label, 대상 지정
-        exitAction = QAction(QIcon("exit.png"), "Exit", self)
+        exitAction = QAction(QIcon("../Image/exit.png"), "Exit", self)
 
         # shortcut 지정
         exitAction.setShortcut("Ctrl+Q")
