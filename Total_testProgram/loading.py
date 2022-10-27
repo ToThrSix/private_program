@@ -7,12 +7,15 @@ import os
 
 
 s_data, samplerate = sf.read(
-    "C:\\Users\\NK22\\Downloads\\keys-of-moon-warm-memories.mp3")
+    "C:\\Users\\NK22\\Downloads\\02 - Sam Houghton and Joe Collinson - The Rhythm King.mp3")
 
 print(type(s_data))
 
 frequency, point, Zxx = sn.stft(
-    s_data[:, 0], samplerate, nperseg=44100)
+    s_data[:, 0], samplerate, nperseg=samplerate/4)
+
+
+print(point)
 
 
 def eq():
@@ -23,11 +26,11 @@ def eq():
     for i in range(0, len(point), 1):
 
         # 0.5초 간격의 주파수별 크기를 절댓값으로 가져옴
-        abs_arr = np.abs(Zxx[600:800, i])*10000
+        abs_arr = np.abs(Zxx[80:280, i])*1000
 
         # 단순 시각화 하기 위해서 데이터를 일정 크기로 줄임
         for cnt in range(0, len(abs_arr), 1):
-            arr.append(int(abs_arr[cnt])//10)
+            arr.append(int(abs_arr[cnt]))
 
         height = 20
 
@@ -46,7 +49,7 @@ def eq():
             if scale != height - 1:
                 test += '\n'
 
-        os.system('cls')
+        # os.system('cls')
         sys.stdout.write('\r' + test)
 
         # 데이터 표시 후 값 초기화
