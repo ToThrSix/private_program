@@ -74,3 +74,27 @@ print("dictionary_collection['c'][3] : ", dictionary_collection['c'][3])
 dictionary_collection['d'] = list_collection
 dictionary_collection['d'].append(tuple_collection)
 print('새로운 데이터가 추가된 dictionary_collection : ', dictionary_collection)
+
+# Dictionary 는 키 값의 중복이 허용되지 않습니다.
+# 같은 키 값을 입력하는 경우 가장 마지막에 지정한 입력한 값으로 데이터가 추가됩니다.
+test_dic_collection = {'1': 1, '1': 2}
+print('test_dic_collection : ', test_dic_collection)
+
+# Set
+# Set 자료형의 특징은 다음과 같습니다.
+# Set_collection = set([1, 2, 3, 4, 5, ...])
+# Set 자료형은 중복이 허용되지 않습니다.
+# Set 자료형의 데이터로 List, Tuple, Dictionary, Set 등의 자료형은 사용할 수 없습니다.
+# Set 자료형의 데이터는 순서가 없습니다.
+set_collection = set([1, 2, 3.0, 'a', 'b', 'c', "HELLO"])
+print('collection type : ', type(set_collection))
+print('collection data : ', set_collection)
+
+# Set 자료형은 중복을 허용하지 않습니다.
+set_collection = set([1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 1, 2, 3, 4, 5, 6])
+print(
+    'set_collection = set([1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 1, 2, 3, 4, 5, 6]) : ', set_collection)
+
+# Set 자료형은 데이터의 순서가 없습니다.
+set_collection = set("This is why I'm not good at English.")
+print('set_collection = set("This is why I\'m not good at English.") : ', set_collection)
